@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/watch.webp');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Container for Stopwatch */
+.stopwatch-container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+/* Stopwatch Display */
+.display {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+/* Control Buttons */
+.controls button {
+    background-color: #f08080;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #ff6347;
+}
+
+/* Lap Times */
+.lap-times {
+    margin-top: 30px;
+}
+
+.lap-times h2 {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Lap List */
+#lapList {
+    list-style-type: none;
+}
+
+#lapList li {
+    font-size: 1.2rem;
+    color: #f0e68c;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .stopwatch-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .display {
+        font-size: 2.5rem;
+    }
+
+    .controls button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    #lapList li {
+        font-size: 1rem;
+    }
+}
